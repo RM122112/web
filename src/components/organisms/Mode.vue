@@ -3,7 +3,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import BaseButton from '@/components/atoms/BaseButton.vue'
 import InlineIcon from '@/components/atoms/InlineIcon.vue'
 
-const STORAGE_KEY = 'denkspiele-theme'
+const STORAGE_KEY = 'lernkarten-theme'
 const prefersDark = ref(false)
 const darkMode = ref(false)
 

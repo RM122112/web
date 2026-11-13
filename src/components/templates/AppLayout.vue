@@ -7,22 +7,22 @@ import Mode from '@/components/organisms/Mode.vue'
 <template>
   <div class="app-layout">
     <header class="topbar">
-      <RouterLink class="brand" to="/games">
-        <InlineIcon name="game" />
-        <span>Denkspiele</span>
+      <RouterLink class="brand" to="/cards">
+        <InlineIcon name="cards" />
+        <span>Lernkarten</span>
       </RouterLink>
       <Mode />
     </header>
     <div class="app-layout__body">
       <nav class="navigation" aria-label="Hauptnavigation">
-        <RouterLink class="navigation__link" active-class="is-active" to="/games">
-          <InlineIcon name="game" /><span>Spiele</span>
-        </RouterLink>
-        <RouterLink class="navigation__link" active-class="is-active" to="/pdfs">
-          <InlineIcon name="pdf" /><span>PDFs</span>
-        </RouterLink>
         <RouterLink class="navigation__link" active-class="is-active" to="/cards">
-          <InlineIcon name="cards" /><span>Karteikarten</span>
+          <InlineIcon name="cards" /><span>Karten</span>
+        </RouterLink>
+        <RouterLink class="navigation__link" active-class="is-active" to="/quiz">
+          <InlineIcon name="quiz" /><span>Quiz</span>
+        </RouterLink>
+        <RouterLink class="navigation__link" active-class="is-active" to="/pdf">
+          <InlineIcon name="pdf" /><span>PDF</span>
         </RouterLink>
       </nav>
       <main class="page-content">

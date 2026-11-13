@@ -1,16 +1,12 @@
 <script setup lang="ts">
 import BaseCard from '@/components/atoms/BaseCard.vue'
-import BaseBadge from '@/components/atoms/BaseBadge.vue'
-
-defineProps<{ title: string; description: string }>()
 </script>
 
 <template>
-  <section class="section-page">
+  <section class="page">
+    <h1>Karten</h1>
     <BaseCard>
-      <h1>{{ title }}</h1>
-      <p>{{ description }}</p>
-      <BaseBadge tone="accent">Wird in einer späteren Ausbaustufe ergänzt</BaseBadge>
+      <p>Hier verwaltest du deine Wörter und Karteikarten.</p>
     </BaseCard>
   </section>
 </template>
@@ -18,7 +14,7 @@ defineProps<{ title: string; description: string }>()
 <style scoped lang="scss">
 @use '@/styles/abstracts' as *;
 
-.section-page {
+.page {
   width: min(100%, $content-width);
   margin: 0 auto;
   padding: $space-4;
