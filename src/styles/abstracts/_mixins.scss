@@ -1,0 +1,23 @@
+@use 'tokens' as *;
+
+@mixin focus-ring {
+  outline: $focus-width solid var(--focus-ring);
+  outline-offset: $space-1;
+}
+
+@mixin button-reset {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  cursor: pointer;
+}
+
+@mixin card-surface {
+  background: var(--paper);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}

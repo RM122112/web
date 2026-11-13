@@ -1,0 +1,19 @@
+@use 'base/reset';
+@use 'base/themes';
+@use 'base/typography';
+@use 'utilities/helpers';
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+textarea {
+  color: var(--ink);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
