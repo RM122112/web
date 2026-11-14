@@ -10,6 +10,10 @@ export const router = createRouter({
       path: '/games/guess-the-number',
       component: () => import('@/games/guess-the-number/GuessTheNumberGame.vue'),
     },
+    {
+      path: '/games/mental-math',
+      component: () => import('@/games/mental-math/MentalMathGame.vue'),
+    },
     { path: '/:pathMatch(.*)*', redirect: '/games' },
   ],
 })

@@ -1,4 +1,5 @@
 import guessThumbnail from '@/assets/thumbnails/guess-the-number.svg'
+import mentalMathThumbnail from '@/assets/thumbnails/mental-math.svg'
 import sudokuThumbnail from '@/assets/thumbnails/sudoku.svg'
 
 export interface GameInfo {
@@ -13,5 +14,10 @@ export const games: GameInfo[] = [
     id: 'guess-the-number',
     title: 'Zahlenraten',
     thumbnail: guessThumbnail,
+  },
+  {
+    id: 'mental-math',
+    title: 'Kopfrechnen',
+    thumbnail: mentalMathThumbnail,
   },
 ]
