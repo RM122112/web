@@ -1,47 +1,49 @@
 :root {
-  --ink: #1f2430;
-  --paper: #fdfcf8;
-  --bg: #efece4;
-  --user: #2f5fb3;
-  --peer: #eceae2;
-  --same: #dfe7f5;
-  --select: #c9d8f2;
-  --error: #c62828;
-  --error-bg: #fbe3e3;
-  --error-bg-strong: #f5c6c6;
-  --accent: #2f5fb3;
-  --muted: #6b6f78;
-  --surface-border: color-mix(in srgb, var(--ink) 30%, transparent);
-  --focus-ring: #174b9b;
-  --active-ring: #fff;
-  --shadow-color: rgb(0 0 0 / 0.25);
-  --shadow-color-strong: rgb(0 0 0 / 0.4);
-  --card-overlay: rgb(0 0 0 / 0.6);
+  color-scheme: light;
+  --bg: #d3dbe6;
+  --paper: #e6ebf2;
+  --ink: #1b2536;
+  --muted: #4f5a6b;
+  --accent: #24508f;
+  --error: #b3261e;
+  --user: var(--accent);
+  --peer: #dae3ef;
+  --same: #c7d6ea;
+  --select: #b5c8e6;
+  --error-bg: #f3d8d5;
+  --error-bg-strong: #e9c0bc;
+  --surface-border: #5f6f87;
+  --focus-ring: #1f4f97;
+  --active-ring: #c6d7ee;
+  --shadow-color: rgb(45 67 101 / 0.18);
+  --shadow-color-strong: rgb(41 63 96 / 0.32);
+  --card-overlay: rgb(34 54 86 / 0.48);
   --radius-card: 14px;
   --radius-sm: 6px;
-  --shadow-card: 0 2px 8px rgb(0 0 0 / 0.25);
+  --shadow-card: 0 6px 24px var(--shadow-color);
 }
 
 @mixin dark-theme {
-  --ink: #e6e6e6;
-  --paper: #1e2129;
-  --bg: #14161b;
-  --user: #8fb4ff;
-  --peer: #262a34;
-  --same: #2c3850;
-  --select: #34476b;
-  --error: #ff7b7b;
-  --error-bg: #3d2224;
-  --error-bg-strong: #552a2d;
+  color-scheme: dark;
+  --bg: #0f1a2b;
+  --paper: #18263b;
+  --ink: #dde5f0;
+  --muted: #9aa8bd;
   --accent: #8fb4ff;
-  --muted: #9aa0aa;
-  --surface-border: color-mix(in srgb, var(--ink) 30%, transparent);
-  --focus-ring: #b8d0ff;
-  --active-ring: #fff;
-  --shadow-color: rgb(0 0 0 / 0.4);
-  --shadow-color-strong: rgb(0 0 0 / 0.6);
-  --card-overlay: rgb(0 0 0 / 0.7);
-  --shadow-card: 0 2px 8px rgb(0 0 0 / 0.4);
+  --error: #ff8a80;
+  --user: var(--accent);
+  --peer: #22324b;
+  --same: #2c4161;
+  --select: #38547f;
+  --error-bg: #4d2b33;
+  --error-bg-strong: #663740;
+  --surface-border: #70829f;
+  --focus-ring: #9ebdff;
+  --active-ring: #d2def2;
+  --shadow-color: rgb(7 12 23 / 0.45);
+  --shadow-color-strong: rgb(7 12 23 / 0.62);
+  --card-overlay: rgb(8 14 27 / 0.72);
+  --shadow-card: 0 8px 28px var(--shadow-color);
 }
 
 :root.my-app-dark {
