@@ -11,11 +11,6 @@
   --error-bg-strong: #f5c6c6;
   --accent: #2f5fb3;
   --muted: #6b6f78;
-  --sidebar-bg: #14161f;
-  --sidebar-border: #c62828;
-  --on-sidebar: #fff;
-  --badge-bg: #fff;
-  --badge-text: #5b3df5;
   --surface-border: color-mix(in srgb, var(--ink) 30%, transparent);
   --focus-ring: #174b9b;
   --active-ring: #fff;
@@ -25,8 +20,6 @@
   --radius-card: 14px;
   --radius-sm: 6px;
   --shadow-card: 0 2px 8px rgb(0 0 0 / 0.25);
-  --nav-bg: var(--paper);
-  --nav-active: var(--select);
 }
 
 @mixin dark-theme {
@@ -42,11 +35,6 @@
   --error-bg-strong: #552a2d;
   --accent: #8fb4ff;
   --muted: #9aa0aa;
-  --sidebar-bg: #101117;
-  --sidebar-border: #ff7b7b;
-  --on-sidebar: #fff;
-  --badge-bg: #fff;
-  --badge-text: #5b3df5;
   --surface-border: color-mix(in srgb, var(--ink) 30%, transparent);
   --focus-ring: #b8d0ff;
   --active-ring: #fff;
