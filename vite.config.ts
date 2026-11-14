@@ -11,6 +11,7 @@ export default defineConfig({
   },
   build: {
     assetsInlineLimit: 0,
+    sourcemap: false,
   },
   server: {
     port: 3212,

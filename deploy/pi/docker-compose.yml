@@ -1,0 +1,17 @@
+services:
+  denkspiele:
+    image: denkspiele-web:1.0.0
+    container_name: denkspiele-web
+    platform: linux/arm64
+    restart: unless-stopped
+    ports:
+      - '8080:8080'
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    mem_limit: 256m
+    logging:
+      driver: json-file
+      options:
+        max-size: '5m'
+        max-file: '3'
