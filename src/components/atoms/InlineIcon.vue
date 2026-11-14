@@ -1,6 +1,6 @@
 <script setup lang="ts">
 withDefaults(defineProps<{
-  name: 'sun' | 'moon' | 'clock' | 'pause' | 'play' | 'book' | 'pdf' | 'cards' | 'game'
+  name: 'sun' | 'moon' | 'clock' | 'pause' | 'play' | 'game'
   size?: number
 }>(), { size: 20 })
 </script>
@@ -31,15 +31,6 @@ withDefaults(defineProps<{
     </template>
     <template v-else-if="name === 'play'">
       <path d="m8 5 12 7-12 7z" />
-    </template>
-    <template v-else-if="name === 'book'">
-      <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 1 4 17.5zM4 5.5v12M8 7h8m-8 4h8" />
-    </template>
-    <template v-else-if="name === 'pdf'">
-      <path d="M6 2h8l5 5v15H6zM14 2v5h5M8 14h2a2 2 0 0 0 0-4H8v7m6-7v7h2a3.5 3.5 0 0 0 0-7z" />
-    </template>
-    <template v-else-if="name === 'cards'">
-      <rect x="4" y="5" width="13" height="16" rx="2" /><path d="M8 3h10a2 2 0 0 1 2 2v13M7 10h7m-7 4h7" />
     </template>
     <template v-else>
       <rect x="3" y="3" width="18" height="18" rx="3" /><path d="M8 8h3v3H8zm5 0h3v3h-3zm-5 5h3v3H8zm5 0h3v3h-3z" />

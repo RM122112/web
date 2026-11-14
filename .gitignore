@@ -3,5 +3,4 @@ dist
 *.log
 .idea/
 tsconfig.tsbuildinfo
-.idea/
-tsconfig.tsbuildinfo
+pi-paket/

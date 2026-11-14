@@ -7,7 +7,7 @@ import { games } from '@/data/games'
   <section class="games-home">
     <header class="page-heading">
       <p class="eyebrow">Denkspiele</p>
-      <h1>Womit möchtest du spielen?</h1>
+      <h1>Welches Spiel spielst du?</h1>
     </header>
     <div class="game-grid">
       <GameCard v-for="game in games" :key="game.id" :game="game" />
