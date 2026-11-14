@@ -111,7 +111,7 @@ function moveSelection(rowDelta: number, columnDelta: number): void {
 
 function onKey(event: KeyboardEvent): void {
   if (loading.value) return
-  if (/^[1-9]$/.test(event.key)) setValue(Number(event.key))
+  if (event.key >= '1' && event.key <= '9') setValue(Number(event.key))
   else if (['Backspace', 'Delete', '0'].includes(event.key)) setValue(0)
   else if (event.key === 'ArrowUp') moveSelection(-1, 0)
   else if (event.key === 'ArrowDown') moveSelection(1, 0)
